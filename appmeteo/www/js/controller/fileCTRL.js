@@ -1,15 +1,16 @@
-app.controller('fileCTRL', ['$scope','$http' ,'$location', '$rootScope', '$stateParams','$state', '$sce',  function($scope, $http, $location, $rootScope, $state, $stateParams, $sce) {
+app.controller('fileCTRL', ['$scope','$http' , '$stateParams',   function($scope, $http, $stateParams) {
 
 
-var test = $http({
- method : "GET",
- url : 'file/'+$stateParams.file+'.his'
-});
+ var test = $http({
+  method : "GET",
+  url : 'file/'+$stateParams.file+'.his'
+ 
+ });
 
-console.log("state : "+ $stateParams)
+console.log($stateParams.file)
 
 test.then(function (filedata) {
-	console.log("tata");
-});
+ 	console.log("tata");
+ });
 
 }]);
