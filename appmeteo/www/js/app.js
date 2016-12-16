@@ -12,13 +12,17 @@ var app = angular.module('starter', ['ionic'])
       controller: 'uploadCTRL'
     })
   $stateProvider.state('liste',{
-      url:'/liste/:file',
+      url:'/liste',
       templateUrl:'views/liste/liste_fichier.html',
-      controller: 'fileCTRL'
+      controller: 'listFileCTRL'
   })
   $stateProvider.state('home',{
     url: '/home',
     templateUrl: 'views/home/home.html'
+  })
+  $stateProvider.state('file',{
+    url: '/file/:file',
+    templateUrl: 'views/file/file.html'
   })
     $urlRouterProvider.otherwise('/home');  
 })

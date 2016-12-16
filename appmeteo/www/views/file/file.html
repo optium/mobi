@@ -1,0 +1,23 @@
+<ion-view view-title="file">
+<ion-content>
+ <ion-item ng-controller="fileCTRL">
+    <h1 class="centerText">Tableau récapitulatif </br> du fichier {{title}}</h1>
+  <div class="row header">
+      <div class="col ">Nom de l’analyse</div>
+      <div class="col ">Min</div>
+      <div class="col ">Heure du min</div>
+      <div class="col ">Moyenne de la journée</div>
+      <div class="col ">Max</div>
+      <div class="col ">Heure du max</div>
+  </div>
+  <div class="row" ng-repeat="line in data">
+          <div ng-repeat="val in line" class="col">{{val}}<span ng-if="line[0]=='LOCAL_WS_2MIN_MNM'"></span>
+
+            <span ng-if="$index=='1'">({{MM.min}}°) </span>
+            <span ng-if="$index=='4'">({{MM.max}}°) </span>
+          </div>
+      </div>
+  </div>
+</ion-item>
+</ion-content>
+</ion-view>

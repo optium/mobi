@@ -1,1 +1,23 @@
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+  font-size: 15px;
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+
+.centerText {
+    text-align: center;
+}
 /* Empty. Add your own CSS if you like */

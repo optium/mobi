@@ -1,8 +1,11 @@
 <ion-view view-title="file">
  <ion-content>
- <div ng-controller="fileCTRL">
- 	<h1>file</h1>
-     
+ <div ng-controller="listFileCTRL">
+ 	<ion-item ng-repeat="item in items"> 
+ 	<ul>
+ 		<li><button ng-click="loadFile(item)" class="button button-block button-positive">{{item}}</button></li>
+ 	</ul>
+     </ion-item>
        
    </div>    
  </ion-content>	
