@@ -3,7 +3,10 @@
  <div ng-controller="listFileCTRL">
  	<ion-item ng-repeat="item in items"> 
  	<ul>
- 		<li><button ng-click="loadFile(item)" class="button button-block button-positive">{{item}}</button></li>
+ 		<li>
+	 		<button ng-click="loadFile(item)" class="button button-block button-positive">{{item}}</button>
+	 		<button ng-click="loadGraph(item)" class="ion-ios-pie" >{{item}}</button>
+ 		</li>
  	</ul>
      </ion-item>
        

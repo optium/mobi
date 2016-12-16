@@ -4,5 +4,7 @@ $scope.items = ["1_ENHANCED_01.his","1_ENHANCED_02.his"];
 $scope.loadFile = function(item){
 	$window.location.href = "#/file/" + item;
 }
-
+$scope.loadGraph = function(item){
+	$window.location.href = "#/graph/" + item;
+}
 }]);

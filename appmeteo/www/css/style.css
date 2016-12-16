@@ -1,9 +1,13 @@
+body {
+ 
+}
+
 .header .col {
-    background-color:lightgrey;
+       background-color: #5dade6;
+    color: white;
 }
 
 .col {
-  font-size: 15px;
     border: solid 1px grey;
     border-bottom-style: none;
     border-right-style: none;
@@ -17,7 +21,7 @@
     border-bottom: solid 1px grey;
 }
 
-.centerText {
-    text-align: center;
+#highcharts-9 svg rect{
+ fill-opacity:0;
+ background-color:white;
 }
-/* Empty. Add your own CSS if you like */
